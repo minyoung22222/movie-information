@@ -1,14 +1,18 @@
-body, h1 {
+body, h1, p, h2 {
     margin: 0;
+}
+
+.body {
+    background-color: #000;
 }
 
 .header {
     height: 1000px;
     background-image: url(images/cover.png);
     background-size: cover;
-    box-shadow: inset 0 -120px 200px black;
+    box-shadow: inset 0 -250px 500px black;
     position: relative;
-    
+    background-position: center;
 }
 
 .title {
@@ -26,6 +30,7 @@ body, h1 {
     color: #fff;
     bottom: 0;
     font-size: 12px;
+    font-weight: bold;
     width: fit-content;
     padding: 3px 15px;
     border-radius: 5px;
@@ -36,4 +41,106 @@ body, h1 {
 
 .main {
     background-color: black;
+    padding: 30px 50px 100px;
+    position: relative;
+    overflow: hidden;
 }
+
+.movie-description {
+    float: left;
+    color: #a2a2a2;
+    font-size: 13px;
+    line-height: 2;
+    font-weight: bold;
+    word-break: keep-all;
+    width: 55%;
+    margin-bottom: 20px;
+}
+
+.genre {
+    position: absolute;
+    color: #fff;
+    left: 75%;
+    bottom: 0px;
+    font-size: 15px;
+}
+
+.genre-group {
+    margin-bottom: 6px;
+}
+
+.genre-group:nth-child(1) {
+    margin-top: 20px;
+}
+
+.genre-item {
+    color: #a2a2a2;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-weight: normal;
+    margin: 2px;
+}
+
+.ratings, .casts {
+    position: absolute;
+    color: #fff;
+    left: 75%;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.ratings div::before {
+    display: block;
+    content: '';
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    background-size: 200px;
+    background-image: url(images/happy.png);
+    background-position: 0px 40px;
+    position: relative;
+}
+
+.ratings div::after {
+    display: block;
+    content: '';
+    width: 80px;
+    height: 40px;
+    background-size: 200px;
+    background-image: url(images/happy.png);
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+
+.casts {
+    top: 170px;
+}
+
+.casts-img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid #000;
+}
+
+.casts-img:nth-child(1) {
+    position: relative;
+}
+
+.casts-img:nth-child(2) {
+    position: absolute;
+    left: 50px;
+}
+
+.casts-img:nth-child(3) {
+    position: absolute;
+    left: 100px;
+}
+
+.casts-img:nth-child(4) {
+    position: absolute;
+    left: 150px;
+}
+
