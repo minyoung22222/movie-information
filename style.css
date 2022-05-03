@@ -156,13 +156,8 @@ body {
     left: 150px;
 }
 
-/* @media screen and (max-width: 1000px) {
-    .header {
-
+@media screen and (max-width: 1000px) {
+    .title {
+        font-size: 4rem;
     }
-    .main {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-} */
+}
